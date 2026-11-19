@@ -65,7 +65,7 @@ public:
     void resized() override;
     void refresh();
 
-    bool isInterestedInFileDragging (const juce::StringArray& files) override;
+    bool isInterestedInFileDrag (const juce::StringArray& files) override;
     void fileDragEnter (const juce::StringArray&, int, int) override { dragOver = true;  repaint(); }
     void fileDragExit  (const juce::StringArray&) override           { dragOver = false; repaint(); }
     void filesDropped  (const juce::StringArray& files, int, int) override;
