@@ -173,7 +173,7 @@ void SourceSlot::refresh()
     repaint();
 }
 
-bool SourceSlot::isInterestedInFileDragging (const juce::StringArray& files)
+bool SourceSlot::isInterestedInFileDrag (const juce::StringArray& files)
 {
     for (auto& f : files)
         if (proc.isSupportedFile (juce::File (f)))
